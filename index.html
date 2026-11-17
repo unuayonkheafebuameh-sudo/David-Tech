@@ -4,27 +4,253 @@
     <title>David Tech</title>
     <meta charset="UTF-8"
           <meta name="viewportmeta" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+
+  .hero-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+.logo{
+  margin-top: -0.15px;
+  margin-left: -1px;
+  font-size: 30px;
+}
+  
+  .hamburger{
+    display: block;
+  justify-content: space-between;
+  align-items: center;
+    font-size: 30px;
+    margin-right: -1px;
+    margin-top: -9px;
+    background: white;    
+    margin-left: -3px;
+  }
+  .navbar{
+    flex-wrap: wrap;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+    position: relative;
+  }
+  .menu{
+    margin-left: auto;
+    position: relative;
+    background-color: white;
+  }
+    .menu[open].navlinks{
+      display: flex;
       
+    }
+      .menu[open]{
+      left: 0;
+      top: 50%;
+      transform: translateY(-15%);
+      margin-left: 0;
+      z-index: 10000;
+        flex-basis: 100%;
+    }
+  
+ .nav-links {
+  
+  flex-direction: column;
+  
+  padding: -1px;
+   color: black;
+   text-decoration: none;
+   background-color: white;
+   color: black;
+   text-weight: bold;
+   font-size: 20px;
+   display: block;
+   position: static;
+   width: 100%;
+   gap: 20px;
+   line-height: 50px;
+   
+ }
+  .box{
+    background-color: white;
+    box-sizing: border-box;
+  }
+    .hamburger-background{
+      background-color: white;
+      color: white;
+    }
+
+
+  .tagline{
+    font-family: "Poppins", sans-serif;
+  font-weight: 800px;
+    font-size: 38px;
+  font-style: normal;
+    line-height: 35px;
+    margin-top: 200px;
+  }
+  .speaks{
+    font-size: 50px;
+  
+  }
+  .VMW-buttons{
+    color: white;
+    background-color:blue;
+    border: none;
+    border-radius: 9999px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style: Arial;
+  }
+  .CM-buttons{
+    color: blue;
+    background-color: transparent;
+    border: solid;
+    border-radius: 9999px;
+    border-line: blue;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    opacity: 100;
+    margin-top: 10px;
+  }
+
+  .my-recent{
+    margin-top: 100px;
+    
+  }
+  .project-card{
+    border-color: #0000ff;
+    border: solid;
+    background-color: blue;
+    margin-bottom: 50px;
+    display: block;
+    width: 320px;
+    height: 250px;
+  }
+</style>
+
+
+
+
+    
   </head>
   <body>
-<img src="logo.png" alt="logo">
-    <nav>
-      <a href="home">Home</a>
-      <a href="my-works">My Works</a>
-      <a href=about-me>About Me</a>
-      <a href="contact-me">Contact Me</a>
+<img class="logo" src="logo.png" alt="logo">
+    <nav class="navbar">
+
+<details class="menu"
+  <div class="hamburger-background">
+    <summary class="hamburger"> &#9776;</summary>
+  </div>
+     <div class="box">
+      <a class="nav-links" href="home">Home</a>
+  <br>
+      <a class="nav-links" href="my-works">My Works</a>
+  <br>
+      <a class="nav-links" href=about-me>About Me</a>
+  <br>
+      <a class="nav-links" href="contact-me">Contact Me</a>
+     </div>
     </nav>
-  <h1>Creating Designs That Speaks</h1>
-    <button>View My Works</button>
+  <h1 class="tagline">CREATING DESIGNS THAT <br><span class="speaks">SPEAKS</span></h1>
+    <button class="VMW-buttons">View My Works<b>&rarr;</b></button>
     <br>
-    <button>Contact Me</button>
-    <p><small>MY RECENT WORKS</small></p>
+    <button class="CM-buttons">Contact Me</button>
+    <p class="my-recent"><small><b>MY RECENT WORKS</b></small></p>
     
-    <div class="project card">
+    <div class="project-card">
       
       <div class="project-image"><img src="images/logo.png" alt="Overview">
-      
+      </div>
+      <div class="project-content">
+        <span>01</span>
+        <h2>Castillo Kitchen</h2>
+        
+        <p> full stack Restaurant Website solution</p>
+        
+        <a href=https://castillo-kitchen-connectt.preciouajosh.workers.dev/>View Project &rarr;</a>
+        <a class="project-link">View Project<b>&rarr;</b></a>
       </div>
     </div>
+
+    <div class="project-card">
+      
+      <div class="project-image-2"><img src="images/logo.png" alt="Overview"></div>
+     <div class="project-content-2">
+        <span>02</span>
+        <h2>BlueCrest International Academy</h2>
+        
+        <p> full stack school management system</p>
+        
+        <a href=https://bluecrest-academy.unuayonkheafebuameh.workers.dev/>View Project &rarr;</a>
+        <a class="project-link">View Project<b>&rarr;</b></a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      
+      <div class="project-image-3"><img src="images/logo.png" alt="Overview"></div>
+     <div class="project-content-3">
+        <span>03</span>
+        <h2>Green Essence Farms Ltd</h2>
+        
+        <p> farm Website</p>
+        
+        <a href=https://green-essence-farm.unuayonkheafebuameh.workers.dev/>View Project &rarr;</a>
+        <a class="project-link">View Project<b>&rarr;</b></a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      
+      <div class="project-image-4"><img src="images/logo.png" alt="Overview"></div>
+     <div class="project-content-4">
+        <span>04</span>
+        <h2>Sheens World</h2>
+        
+        <p>A proffesional handbag website order solution </p>
+        
+        <a href=sheens-world.unuayonkheafebuameh.workers.dev/>View Project &rarr;</a>
+        <a class="project-link">View Project<b>&rarr;</b></a>
+      </div>
+    </div>
+    <p><small>ABOUT ME</small></p>
+    <img src="About-me-image" alt="My picture"><br>
+      <p>I'm Unuayonkhe David, a web designer, creative professional, and the CEO of David Tech and Designs, a digital solutions brand committed to helping businesses establish a strong and professional online presence.<br>
+My passion lies in using technology, creativity, and innovation to solve problems and create meaningful digital experiences. Through my work, I have reached out to over 60 businesses, exploring opportunities to help brands improve their visibility, connect with their audiences, and grow through digital solutions.<br>
+I believe every business deserves a digital identity that communicates its value, builds trust, and stands out. My goal is not just to create designs or build websites, but to deliver solutions that make a difference.
+I create. I innovate. I build digital experiences that speak.</p>
+     <h3>QUICK LINKS</h3>
+
+    <a href="home">Home</a>
+  <br>
+      <a href="my-works">My Works</a>
+  <br>
+      <a href=about-me>About Me</a>
+  <br>
+      <a  href="contact-me">Contact Me</a>
+    <br>
+    <a href="FAQ">FAQ</a>
+    <br>
+    <a href="contact-us">Contact Us</a>
+    <h4>Contact</h4>
+    <p> 08100133172,08123998568</p>
+    <address>Behind Eagle Height Education CentreFulani Road,Kwankwashe,Suleja,Niger State</address>
+    <p>&copy 2026 David Tech and Designs All Right Reserved</p>
   </body>
 </html>
